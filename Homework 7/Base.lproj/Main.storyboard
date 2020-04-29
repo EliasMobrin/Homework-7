@@ -7,10 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Distance-->
         <scene sceneID="oeS-nF-m3X">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdq-DT-LaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Eto-mf-Mz1" customClass="ViewController" customModule="Homework_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lr3-nr-d01">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -35,15 +34,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OgC-oJ-6rU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="doc" catalog="system" selectedImage="doc.fill" id="xoK-97-iN0"/>
+                    <tabBarItem key="tabBarItem" title="Distance" image="doc" catalog="system" selectedImage="doc.fill" id="xoK-97-iN0"/>
                     <connections>
                         <outlet property="distanceLabel" destination="6f0-WR-QpI" id="RZq-J6-gTp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdq-DT-LaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217.39130434782609" y="129.91071428571428"/>
+            <point key="canvasLocation" x="-217" y="210"/>
         </scene>
-        <!--Item 1-->
+        <!--Start-->
         <scene sceneID="O0o-L5-VX0">
             <objects>
                 <viewController id="Z00-Kg-n6E" sceneMemberID="viewController">
@@ -66,11 +66,52 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="C35-vs-t4n"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="arrowshape.turn.up.left" catalog="system" selectedImage="arrowshape.turn.up.left.fill" id="xPy-k2-1Mk"/>
+                    <tabBarItem key="tabBarItem" title="Start" image="arrowshape.turn.up.left" catalog="system" selectedImage="arrowshape.turn.up.left.fill" id="xPy-k2-1Mk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IQX-lR-5s0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217.39130434782609" y="-554.46428571428567"/>
+            <point key="canvasLocation" x="-217" y="-502"/>
+        </scene>
+        <!--URL/Text-->
+        <scene sceneID="30f-zP-ggO">
+            <objects>
+                <viewController id="qm1-Us-bLI" customClass="ViewController2" customModule="Homework_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aUH-Ig-dVa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D94-zB-gH6">
+                                <rect key="frame" x="20" y="69" width="374" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUE-nN-P0a">
+                                <rect key="frame" x="115" y="690" width="184" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Send Text">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendText:" destination="qm1-Us-bLI" eventType="touchUpInside" id="qDo-gI-kkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wDi-To-kdI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="URL/Text" image="shift" catalog="system" selectedImage="shift.fill" id="9Zg-HA-0w7"/>
+                    <connections>
+                        <outlet property="webView" destination="D94-zB-gH6" id="iON-LU-DC2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaJ-ui-Y94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.92753623188412" y="-153.34821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kOO-oi-jYs">
@@ -84,6 +125,7 @@
                     <connections>
                         <segue destination="Z00-Kg-n6E" kind="relationship" relationship="viewControllers" id="zYp-Ap-wnA"/>
                         <segue destination="Eto-mf-Mz1" kind="relationship" relationship="viewControllers" id="HfJ-oQ-DVe"/>
+                        <segue destination="qm1-Us-bLI" kind="relationship" relationship="viewControllers" id="ZC1-rD-Euv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJc-fJ-b2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,5 +139,7 @@
         <image name="doc" catalog="system" width="56" height="64"/>
         <image name="doc.fill" catalog="system" width="56" height="64"/>
         <image name="liverpool_anfield" width="452" height="285"/>
+        <image name="shift" catalog="system" width="64" height="52"/>
+        <image name="shift.fill" catalog="system" width="64" height="52"/>
     </resources>
 </document>
